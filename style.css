@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-1: #afafb0;
+    --color-2: #6a676c;
+    --color-3: #5f7246;
+    --color-4: #26361b;
+    --color-5: #0d140a;
+    --color-0: #f0f0f0;
+    --font-family: 'Sour Gummy', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: var(--font-family);
+    background-color:var(--color-0);
+}
+
+.quadro {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-0);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    background-image: url('https://images.tcdn.com.br/img/img_prod/1203186/buque_de_flores_tulipa_branca_325_1_e255c4bd6c81a8ec91d79a3952249215.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 0 10px var(--color-1), 0 0 0 20px var(--color-2), 0 0 0 30px var(--color-3), 0 0 0 40px var(--color-4);
+}
+
+.quadro span {
+    color: var(--color-3) 
+}
+
+.quadro::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 0 0 0 10px var(--color-1), 0 0 0 20px var(--color-2), 0 0 0 30px var(--color-3), 0 0 0 40px var(--color-4);
+}
+p {
+    color: var(--color-5);
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative; 
+}
